@@ -81,7 +81,41 @@ class _MyHomePageState extends State<MyHomePage> {
           style: TextStyle(
             fontSize: 20,
             decoration: TextDecoration.lineThrough,
+            decorationStyle: TextDecorationStyle.wavy,
+          ),
+        ),
+      ),
+    );
+    return const Material(
+      child: Center(
+        child: Text(
+          'You have pushed the button this many times:',
+          style: TextStyle(
+            fontSize: 20,
+            decoration: TextDecoration.lineThrough,
             decorationThickness: 4,
+          ),
+        ),
+      ),
+    );
+    return const Material(
+      child: Center(
+        child: Text(
+          'You have pushed the button this many times:',
+          style: TextStyle(
+            fontSize: 48,
+            shadows: [
+              Shadow(
+                color: Colors.greenAccent,
+                blurRadius: 1,
+                offset: Offset(45, 45),
+              ),
+              Shadow(
+                color: Colors.red,
+                blurRadius: 10,
+                offset: Offset(-5, 5),
+              ),
+            ],
           ),
         ),
       ),
@@ -119,17 +153,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   ..strokeJoin = StrokeJoin.round)),
       ),
     );
-    return const Material(
-        child: Center(
-      child: Text(
-        'You have pushed the button this many times:',
-        style: TextStyle(
-          fontSize: 20,
-          decoration: TextDecoration.lineThrough,
-        ),
-      ),
-    ));
-
     return Material(
         child: Center(
       child: Text(
